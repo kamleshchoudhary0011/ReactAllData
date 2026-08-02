@@ -1,0 +1,11 @@
+cosntext api 
+
+just a higher order Function component
+
+There are two things in cosntext 
+
+(1) consumer  => createContext()
+
+(2)  Provider contaxtProvider = ({children}) =>{
+  return <consumer.Provider>{children} <consumer.Provider/> 
+}

@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import About from './pages/About'
 import { NavLink, Route, Router, Routes } from 'react-router'
+import Detail from './pages/Detail'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
     <NavLink to={"/"} >Home</NavLink>
     <NavLink to={"/contact"} >About</NavLink>
     <NavLink to={"/aboute"} >Contact</NavLink>
+    <NavLink to={"/detail"} >Detail</NavLink>
   </div>
   <button>Login</button>
 </nav>
@@ -26,7 +28,9 @@ function App() {
 
 
 <Routes>
-     <Route path='/' element={<Home/>}/>
+     <Route path='/' element={<Home/>}>
+     <Route path='detail' element={<Detail/>}/>
+     </Route>
      <Route path='/contact' element={<Contact/>
 }/>
 

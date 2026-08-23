@@ -5,8 +5,10 @@ const Aboute = ({great}) => {
   
   return (
     <div>
+      
       Aboute
 Aboute
+
     </div>
   )
 }
